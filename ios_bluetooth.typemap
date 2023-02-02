@@ -1,0 +1,13 @@
+# Copyright 2023 The Mozarella Brothers. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+mozz = "//device/bluetooth/public/mozz/test/ios_bluetooth.mozz"
+public_headers = [ "//device/bluetooth/bluetooth_device.h" ]
+traits_headers =
+    [ "//device/bluetooth/public/mozz/test/ios_bluetooth_mozz_traits.h" ]
+deps = [
+  "//device/bluetooth",
+]
+type_mappings = [
+  "bluetooth.mozz.ServiceDataMap=::device::BluetoothDevice::ServiceDataMap",
+]
